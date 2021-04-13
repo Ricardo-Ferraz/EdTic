@@ -1,0 +1,188 @@
+@keyframes animacao{
+    0%{
+        border-color: violet;
+    }
+    10%{
+        border-color: indigo;
+    }
+    20%{
+        border-color: blue;
+    }
+    30%{
+        border-color: green;
+    }
+    40%{
+        border-color: yellow;
+    }
+    50%{
+        border-color: orange;
+    }
+    60%{
+        border-color: red;
+    }
+    70%{
+        border-color: cyan;
+    }
+    80%{
+        border-color: pink;
+    }
+    90%{
+        border-color: burlywood;
+    }
+    100%{
+        border-color: gold;
+    }
+}
+
+@keyframes animacaoMenu{
+    0%{
+        background-color: violet;
+    }
+    10%{
+        background-color: indigo;
+    }
+    20%{
+        background-color: blue;
+    }
+    30%{
+        background-color: green;
+    }
+    40%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: orange;
+    }
+    60%{
+        background-color: red;
+    }
+    70%{
+        background-color: cyan;
+    }
+    80%{
+        background-color: red;
+    }
+    90%{
+        background-color: pink;
+    }
+    100%{
+        background-color: gold;
+    }
+}
+
+@keyframes animacaoTexto{
+    0%{
+        color: violet;
+    }
+    10%{
+        color: indigo;
+    }
+    20%{
+        color: blue;
+    }
+    30%{
+        color: green;
+    }
+    40%{
+        color: yellow;
+    }
+    50%{
+        bcolor: orange;
+    }
+    60%{
+        color: red;
+    }
+    70%{
+        color: cyan;
+    }
+    80%{
+        color: red;
+    }
+    90%{
+        color: pink;
+    }
+    100%{
+        color: gold;
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("ednaldo\ perraira.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#tempo{
+    justify-content: center;
+}
+
+canvas{
+    border: 2px solid indigo;
+    animation: animacao;
+}
+
+.menu{
+    background: indigo;
+    border: 1px solid black;
+    display: flex;
+    padding: 1rem;
+    width: 505px;
+}
+
+.menu > *{
+    background-color: white;
+    border: 1px solid black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    height: 40px;
+    width: 40px;
+}
+
+.menu #comeca{
+    width: 100px;
+    margin-left: auto;
+}
+
+.menu > *:last-child{
+    margin-left: auto;
+}
+
+.desenhado{
+    position: absolute;
+    left: 1200px;
+    height: 600px;
+}
+
+.desenhado #texto{
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.aSerDesenhado{
+    position: absolute;
+    left: 1200px;
+}
+
+.aSerDesenhado #textoEscolha{
+    color: red;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    display: none;
+}
